@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travelo - Travel Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+
+<!-- Hidden Checkbox -->
+    <input 
+      type="checkbox" 
+      id="menu-toggle" 
+      name="menu-toggle"
+      aria-label="Toggle navigation menu"
+    >
+
+    <!-- Hamburger -->
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+
+      <div class="nav-btns mobile-btns">
+        <a href="#tour" class="login">Login</a>
+        <a href="#subscribe" class="signup">Sign Up</a>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <h1>Welcome to Travelo Website 🌍 Get started your 
+        exciting <span>journey</span> <br>
+        with us.
+      </h1>
+      <p id="welcomeMsg"></p>
+
+      <p>
+        A team of experienced tourism professionals will provide you with the best
+      advice and tips for your desired destination, ensuring a smooth, memorable
+      and hassle-free travel experience. We help you discover hidden gems, local culture
+      and must-visit attractions tailored to your interests.
+      </p>
+
+      <a href="#destination" class="btn">Discover Now</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/image1.png" alt="Traveler exploring world">
+    </div>
+
+  </div>
+</section>
+<!-- SEARCH -->
+<section class="search-section" id="tour">
+  <div class="container">
+
+    <form class="search-box">
+
+      <div class="field">
+        <label for="location">Location</label>
+        <input id="location" name="location" type="text" placeholder="Where are you going?">
+      </div>
+
+      <div class="field">
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date">
+      </div>
+
+      <div class="field">
+        <label for="guests">Guests</label>
+        <input id="guests" name="guests" type="number" placeholder="Guests">
+      </div>
+
+      <button type="submit" class="search-btn">Explore Now</button>
+
+    </form>
+
+  </div>
+</section>
+<!-- STEPS -->
+<section class="steps" id="about">
+  <div class="container">
+    <h2>Things you need <span>to do</span></h2>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <h3>Sign Up</h3>
+        <p>Complete all required details to create your account.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>Worth of Money</h3>
+        <p>Affordable prices with premium travel experiences.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>Exciting Travel</h3>
+        <p>Explore the world with exciting destinations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- DESTINATIONS -->
+<section class="deals" id="destination">
+  <div class="container">
+    <h2>Exclusive <span>deals & discounts</span></h2>
+
+    <div class="deal-grid">
+
+      <div class="deal-card">
+        <img src="images/image2.png" alt="Madrid travel">
+        <img src="images/image3.png" alt="Spain travel">
+        <img src="images/image4.png" alt="Paris travel">
+        <h4>Madrid, Spain, Paris</h4>
+        <p>$850</p>
+      </div>
+
+      <div class="deal-card">
+        <img src="images/image5.png" alt="France travel">
+        <img src="images/image6.png" alt="London travel">
+        <img src="images/image7.png" alt="UK travel">
+        <h4>France, London, UK</h4>
+        <p>$999</p>
+      </div>
+
+      <div class="deal-card">
+        <img src="images/image8.png" alt="Brazil travel">
+        <img src="images/image9.png" alt="Germany travel">
+        <img src="images/image10.png" alt="Thailand travel">
+        <h4>Brazil, Germany, Thailand</h4>
+        <p>$750</p>
+      </div>
+      <div class="deal-card">
+        <img src="images/image11.png" alt="England travel">
+        <img src="images/image12.png" alt="Africa travel">
+        <img src="images/image13.png" alt="Australia travel">
+        <h4>England, Africa, Australia</h4>
+        <p>$950</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOP DEALS -->
+
+<section class="top-deals" id="deals">
+  <div class="container">
+    <h2>Top <span>Deals</span></h2>
+
+    <div class="top-grid">
+
+      <div class="top-card">
+        <h3>Madrid, Spain, Paris</h3>
+        <p class="price">$850</p>
+      </div>
+
+      <div class="top-card">
+        <h3>France, London, UK</h3>
+        <p class="price">$999</p>
+      </div>
+
+      <div class="top-card">
+        <h3>Brazil, Germany, Thailand</h3>
+        <p class="price">$750</p>
+      </div>
+
+      <div class="top-card">
+        <h3>England, Africa, Australia</h3>
+        <p class="price">$950</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog" id="blog">
+  <div class="container">
+    <h2>Get update with <span>latest blog</span></h2>
+
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="images/image14.png" alt="Travel blog story">
+        <p>The Amazing Difference a Year of Travelling</p>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/image15.png" alt="Travel inspiration">
+        <p>Feel the magic of travel far enough, you meet yourself.</p>
+      </div>
+       <div class="blog-card">
+        <img src="images/image16.png" alt="Travel saving tips">
+        <p>How to Save Money While Visiting Different Countries</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section class="subscribe" id="subscribe">
+  <div class="container subscribe-box">
+
+    <h2>Subscribe and get exclusive deals & offers</h2>
+
+    <form class="subscribe-form">
+      <label for="email" class="visually-hidden">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+
+  </div>
+</section>
+
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h3>Travelo</h3>
+      <p>Book your trip easily and enjoy.</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <p>About</p>
+      <p>Careers</p>
+      <p>Privacy Policy</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Help/FAQ</p>
+      <p>Press</p>
+      <p>Affiliates</p>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 Travelo</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+// ✅ CHECK LOGIN (IMPORTANT)
+const user = JSON.parse(localStorage.getItem("user"));
+
+if (!user) {
+  alert("Please login first!");
+  window.location.href = "signin.html";
+} else {
+  document.getElementById("welcomeMsg").innerText =
+    "Logged in as: " + user.email;
+}
+
+// ✅ DARK MODE BUTTON FIX
+document.getElementById("darkToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+</script>
+
+</body>
+</html>

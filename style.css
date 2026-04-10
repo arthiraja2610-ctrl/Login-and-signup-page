@@ -1,0 +1,156 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+input:focus {
+  border: 2px solid #ff7eb3;
+}
+/* BACKGROUND */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  transition: 0.3s;
+}
+/* GLASS CONTAINER */
+.container {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: white;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+.container {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+
+  /* fallback */
+  background: rgba(255, 255, 255, 0.25);
+
+  /* blur support */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* optional border for glass look */
+  border: 1px solid rgba(255,255,255,0.3);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: white;
+}
+/* TITLE */
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ff7eb3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4e91;
+  transform: scale(1.05);
+}
+
+/* PASSWORD ICON */
+.password-box {
+  position: relative;
+}
+
+.password-box span {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  cursor: pointer;
+}
+
+/* ERROR TEXT */
+.error {
+  font-size: 12px;
+  color: #ffcccc;
+  text-align: left;
+}
+
+/* LINKS */
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* DARK MODE */
+.dark {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.dark .container {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* DARK BUTTON */
+.dark-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
